@@ -1,0 +1,198 @@
+/* html {
+  scroll-behavior: smooth;
+} */
+
+.container {
+    width: 100%;
+}  
+
+body {
+
+  background-color: white;
+}
+
+p {
+    margin-top: 8vh;
+    margin-bottom: 10vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    cursor: default;
+
+    font-family: Times;
+    /* font-size: 55px;
+    line-height: 78px; */
+    font-size: 3vw;
+    line-height: 4.7vw;
+    color: rgb(255, 255, 255);
+    
+    
+}
+
+
+.unwrap { 
+  /* color: rgb(145, 145, 145); */
+  font-style: italic;
+
+  
+}
+
+.zoom {
+  overflow: hidden;
+  transition: transform .2s;
+  size: 70vw;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  /* transform: scale(10.5) translate(-50%,-50%); */
+  overflow: hidden;
+  transform: scale(7);
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  
+}
+
+
+a:hover {
+  color: black;
+  cursor: default;
+}
+img:hover {
+  cursor: pointer;
+}
+
+.button-1:hover, .button-2:hover, .button-3:hover, .button-4:hover, .button-7:hover, .button-8:hover, .button-10:hover {
+  cursor: none;
+  /* text-decoration: underline; */
+  font-style: italic;
+  
+}
+
+/* по умолчанию span с классом sentence скрыт */
+.sentence-1, .sentence-2, .sentence-3, .sentence-4, .sentence-7, .sentence-8, .sentence-10 {
+  display: none;
+  visibility: hidden;
+  /* color: red; */
+  font-style: italic;
+}
+
+/* чтобы включить его мы добавляем класс show */
+.show {
+  display: inline;
+  visibility: visible;
+}
+
+
+img {
+  /* height: 55px; */
+  overflow: hidden;
+  z-index: 1;
+  height: 3.5vw;
+
+  
+}
+
+img.expanded {
+  overflow: hidden;
+  max-width: 100%;
+  min-height: 100%;
+
+}
+
+
+/* @media only screen and (max-width: 1000px) {
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 11px;
+    margin-right: 11px;
+
+    font-family: Times;
+    font-size: 25px;
+    line-height: 45px;}
+
+  img {
+    height: 30px;
+  }
+
+  .zoom:hover {transform: none;} */
+
+  /* .zoom:onclick {transform: scale(7);} */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 160px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(255, 255, 255); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  /* width: 80%; */
+  width: 55vw;
+  height: auto;
+  
+  /* max-height: 80vh; */
+}
+
+/* Add Animation */
+.modal-content {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  color:rgb(0, 0, 0);
+  font-size: 40px;
+  font-weight: lighter;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 11px;
+    margin-right: 11px;
+
+    font-family: Times;
+    font-size: 25px;
+    line-height: 45px;}
+
+  img {
+    height: 30px;
+  }
+
+  .zoom:hover {transform: none;}
+  /* .zoom:onclick {transform: scale(7);} */
+
+}
